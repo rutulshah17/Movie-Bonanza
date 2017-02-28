@@ -4,19 +4,29 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Movie_Bonanza
+namespace SelectForm.cs
 {
-    static class Program
+    public static class Program
     {
+
+        ///declared public static form - Application GLOBAL
+        public static SplashForm MySplashForm;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+
+            //Initialize SplashForm and CalculatorForm
+            Program.MySplashForm = new SplashForm();
+
+
+            Application.Run(Program.MySplashForm);
         }
     }
 }
