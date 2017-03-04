@@ -67,6 +67,7 @@
             this.MovieListBox.Size = new System.Drawing.Size(158, 212);
             this.MovieListBox.Sorted = true;
             this.MovieListBox.TabIndex = 0;
+            this.MovieListBox.SelectedIndexChanged += new System.EventHandler(this.MovieListBox_Click);
             // 
             // TopLabel
             // 
@@ -164,6 +165,7 @@
             this.NextButton.TabIndex = 3;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // SelectForm
             // 

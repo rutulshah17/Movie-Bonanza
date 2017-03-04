@@ -202,6 +202,7 @@
             this.OrderDVDCheckBox.TabIndex = 4;
             this.OrderDVDCheckBox.Text = "Order the DVD (adds $10 to your order)";
             this.OrderDVDCheckBox.UseVisualStyleBackColor = true;
+            this.OrderDVDCheckBox.CheckedChanged += new System.EventHandler(this.OrderDVDCheckBox_CheckedChanged);
             // 
             // GrandTotalLabel
             // 
@@ -248,6 +249,7 @@
             this.BackButton.TabIndex = 2;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // CancelButton
             // 
@@ -258,6 +260,7 @@
             this.CancelButton.TabIndex = 3;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.Exit_Form);
             // 
             // StreamButton
             // 
@@ -268,6 +271,7 @@
             this.StreamButton.TabIndex = 4;
             this.StreamButton.Text = "Stream";
             this.StreamButton.UseVisualStyleBackColor = true;
+            this.StreamButton.Click += new System.EventHandler(this.StreamButton_Click);
             // 
             // OrderFormMenuStrip
             // 
@@ -296,6 +300,7 @@
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.printToolStripMenuItem.Text = "Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // streamToolStripMenuItem
             // 
@@ -303,6 +308,7 @@
             this.streamToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
             this.streamToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.streamToolStripMenuItem.Text = "Stream";
+            this.streamToolStripMenuItem.Click += new System.EventHandler(this.StreamButton_Click);
             // 
             // cancelToolStripMenuItem
             // 
@@ -310,6 +316,7 @@
             this.cancelToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.cancelToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cancelToolStripMenuItem.Text = "Cancel";
+            this.cancelToolStripMenuItem.Click += new System.EventHandler(this.Exit_Form);
             // 
             // helpToolStripMenuItem
             // 
@@ -325,6 +332,7 @@
             this.aboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // PrintPreviewDialog
             // 
@@ -351,6 +359,8 @@
             this.Name = "OrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Your Order";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OrderForm_FormClosing);
+            this.Load += new System.EventHandler(this.onLoad);
             this.MovieSelectedGroupBox.ResumeLayout(false);
             this.MovieSelectedGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePictureBox)).EndInit();
