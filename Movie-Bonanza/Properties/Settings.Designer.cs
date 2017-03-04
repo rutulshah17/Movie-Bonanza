@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Movie_Bonanza.Properties
+namespace SelectForm.cs.Properties
 {
 
 
