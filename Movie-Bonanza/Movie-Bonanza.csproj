@@ -46,14 +46,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="PropertiesClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectForm.Designer.cs">
+      <DependentUpon>SelectForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SplashForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SplashForm.Designer.cs">
       <DependentUpon>SplashForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StreamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StreamForm.Designer.cs">
+      <DependentUpon>StreamForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +93,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SelectForm.resx">
+      <DependentUpon>SelectForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SplashForm.resx">
       <DependentUpon>SplashForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +113,46 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\company_men.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\death_race_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\footloose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gnomeo_and_Juliet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I_am_Number_Four.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No_Strings_Attached.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\real_steel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Season_of_the_Witch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Dilemma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Green_Hornet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Rite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Roommate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Way_Back.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
